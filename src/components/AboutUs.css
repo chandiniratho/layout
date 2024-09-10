@@ -50,7 +50,7 @@
   justify-content: center;
 }
 
-.col-md-4 {
+.col-md-3 {
   flex: 1;
   max-width: 300px;
   margin: 10px;
