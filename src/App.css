@@ -1,0 +1,38 @@
+App.css
+body{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden ;
+}
+
+.header{
+  background-color:#111111;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+.body{
+  background-color: bisque;
+  height: 80%;
+}
+
+.box{
+  border: 2px solid #111111;
+  padding: 5%;
+}
+
+.maincard{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2%;
+}
+.card{
+  width: 300px;
+  padding: 2%;
+  margin: 2%;
+}
+.card img{
+  height: 350px;
+  width: 100%;
+}

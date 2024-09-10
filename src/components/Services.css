@@ -1,0 +1,66 @@
+
+/* General container styling */
+.container {
+  margin-top: 3%;
+  margin-left: 20%;
+
+}
+
+/* Header styling */
+header {
+  background-color: #f8f9fa;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Card styling */
+.card {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Image styling */
+.card-img-top {
+  border-bottom: 2px solid #ddd;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Card body styling */
+.card-body {
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Card title styling */
+.card-title {
+  font-size: 1.0rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Card text styling */
+.card-text {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .card {
+    margin-bottom: 20px;
+  }
+}
