@@ -13,20 +13,18 @@ import Contact from './components/Contact';
 
 function App() {
   return (
-    <div>
-      <Router>
-        <Routes>
-          <Route path='/' element={<Login />} />
-          <Route path='/signup' element={<Signup />} />
-          <Route path='/dashboard' element={<Dashboard />} />
-          <Route path='/about' element={<About />} />
-          <Route path='/about/:id' element={<Onepage />} />
-          <Route path='/services' element={<Services />} />
-          <Route path='/header' element={<Header />} />
-          <Route path='/contact' element={<Contact />} /> {/* Contact route added */}
-        </Routes>
-      </Router>
-    </div>
+    <Router basename={process.env.PUBLIC_URL}>
+      <Routes>
+        <Route path='/' element={<Login />} />
+        <Route path='/signup' element={<Signup />} />
+        <Route path='/dashboard' element={<Dashboard />} />
+        <Route path='/about' element={<About />} />
+        <Route path='/about/:id' element={<Onepage />} />
+        <Route path='/services' element={<Services />} />
+        <Route path='/header' element={<Header />} />
+        <Route path='/contact' element={<Contact />} /> {/* Contact route added */}
+      </Routes>
+    </Router>
   );
 }
 
