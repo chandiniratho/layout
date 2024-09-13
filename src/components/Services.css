@@ -1,9 +1,7 @@
-
 /* General container styling */
 .container {
   margin-top: 3%;
-  margin-left: 20% ;
-
+  margin-left: 20%; /* Adjust this as necessary */
 }
 
 /* Header styling */
@@ -13,6 +11,7 @@ header {
   text-align: center;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-left: 20%; /* Ensure this matches the container's margin */
 }
 
 /* Card styling */
@@ -22,12 +21,7 @@ header {
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-left: 70px;
-}
-
-.card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  margin: 20px auto; /* Center align cards */
 }
 
 /* Image styling */
@@ -46,7 +40,7 @@ header {
 
 /* Card title styling */
 .card-title {
-  font-size: 1.0rem;
+  font-size: 1rem;
   font-weight: bold;
   color: #333;
   margin-bottom: 10px;
@@ -59,12 +53,21 @@ header {
   line-height: 1.6;
 }
 
+/* Column styling for services page */
+.col-md-5 {
+  margin-left: 20%; /* Adjust this margin as needed */
+}
+
 /* Media query for responsiveness */
 @media (max-width: 768px) {
   .card {
     margin-bottom: 20px;
+    margin-left: auto;  /* Ensure cards are centered on small screens */
+    margin-right: auto;
   }
-}
-.col-md-5{
-  margin-left:80px;
+
+  .container, .col-md-5, header {
+    margin-left: 5%; /* Adjust for smaller screens */
+    margin-right: 5%;
+  }
 }
