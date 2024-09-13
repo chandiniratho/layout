@@ -42,8 +42,8 @@ const AboutUs = () => {
           <h2>Meet Our Professional Team</h2>
           <div className="row">
             {teamMembers.map((member, index) => (
-              <div className="col-md-4" key={index}>
-                <div className="card mb-4">
+              <div className="col-md-3" key={index}>
+                <div className="card mb-3">
                   <img src={member.image} className="card-img-top" alt={member.name} />
                   <div className="card-body">
                     <h5 className="card-title">{member.name}</h5>
