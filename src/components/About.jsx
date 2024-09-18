@@ -60,7 +60,7 @@ const AboutUs = () => {
       <div className="about-us container">
         {/* Intro Section */}
         <section className="about-intro">
-          <h1>About Us</h1>
+          <h1>Dashboard</h1>
           <p>
             Welcome to our skincare brand! We are dedicated to providing the best in natural skincare products.
           </p>
