@@ -1,9 +1,6 @@
 import React from 'react';
 import './AboutUs.css';
 import Header from './Header';
-import img17 from '../Assets/img17.jpeg';
-import img18 from '../Assets/img18.jpeg';
-import img19 from '../Assets/img19.jpeg';
 import { PieChart, Pie, Cell, LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, BarChart, Bar, AreaChart, Area, Radar, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, ScatterChart, Scatter } from 'recharts';
 
 
@@ -60,7 +57,7 @@ const AboutUs = () => {
       <div className="about-us container">
         {/* Intro Section */}
         <section className="about-intro">
-          <h1>About Us</h1>
+          <h1>Overview</h1>
           <p>
             Welcome to our skincare brand! We are dedicated to providing the best in natural skincare products.
           </p>

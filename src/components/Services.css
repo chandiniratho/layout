@@ -1,8 +1,8 @@
 /* General container styling */
 .container {
   margin-top: 3%;
-  margin-left: 10% ;
-
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 /* Header styling */
@@ -12,7 +12,8 @@ header {
   text-align: center;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-left: 20%; /* Ensure this matches the container's margin */
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 /* Card styling */
@@ -22,7 +23,7 @@ header {
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-left:70px;
+  margin: 20px auto; /* Center the cards */
 }
 
 .card:hover {
@@ -46,7 +47,7 @@ header {
 
 /* Card title styling */
 .card-title {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: bold;
   color: #333;
   margin-bottom: 10px;
@@ -64,16 +65,79 @@ header {
   margin-left: 20%; /* Adjust this margin as needed */
 }
 
-/* Media query for responsiveness */
+/* Media queries for responsiveness */
+@media (max-width: 1200px) {
+  .container {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  header {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .col-md-5 {
+    margin-left: 15%;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+
+  header {
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+
+  .col-md-5 {
+    margin-left: 10%;
+  }
+}
+
 @media (max-width: 768px) {
+  .container, .col-md-5, header {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
   .card {
     margin-bottom: 20px;
     margin-left: auto;  /* Ensure cards are centered on small screens */
     margin-right: auto;
   }
 
-  .container, .col-md-5, header {
-    margin-left: 5%; /* Adjust for smaller screens */
-    margin-right: 5%;
+  .card-body {
+    padding: 15px;
+  }
+
+  .card-title {
+    font-size: 1.1rem;
+  }
+
+  .card-text {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .container, header {
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+
+  .card-img-top {
+    height: 180px; /* Reduce image height on small screens */
+  }
+
+  .card-title {
+    font-size: 1rem;
+  }
+
+  .card-text {
+    font-size: 0.85rem;
   }
 }
